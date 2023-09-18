@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaePT - 배방고 신입생을 위한 봇</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+        }
+        .response h2 {
+            margin-bottom: 10px;
+            color: #007BFF;
+            font-size: 24px;
+        }
+        .response p {
+            font-size: 18px;
+            color: #333;
+        }
+        .update {
+            margin-top: 20px;
+            color: #555;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BaePT - 배방고 신입생을 위한 봇</h1>
+        <form method="POST">
+            <label for="user_input">무엇이 궁금하세요?</label>
+            <input type="text" id="user_input" name="user_input" required>
+            <button type="submit">질문하기</button>
+        </form>
+        <div class="response">
+            <h2>답변:</h2>
+            <p>{{ answer }}</p>
+        </div>
+        <div class="update">
+            <h2>지속적인 업데이트 중 입니다.</h2>
+        </div>
+        <div class="footer">
+            <h2>Made by. 배방고 재학생 태현 . 명주</h2>
+        </div>
+    </div>
+</body>
+</html>
